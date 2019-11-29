@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>TicTok</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Images\emoji-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TicTok.Resourses\TicTok.Resourses.csproj" />
+    <ProjectReference Include="..\TicToke.Module.Page\TicToke.Module.Page.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\emoji-background.png" />
+  </ItemGroup>
+</Project>
